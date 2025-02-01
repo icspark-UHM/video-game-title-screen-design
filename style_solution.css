@@ -1,0 +1,60 @@
+html {
+  margin: 0;
+  height: 100%; 
+}
+
+body {
+    background-image: url("minecraft-assets/minecraft_background_with_title.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+#images {
+    display: flex;
+    flex-direction: column;
+}
+
+#top {
+    display: flex;
+    margin-top: 275px;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bottom {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    gap: 10px;;
+}
+
+#splash {
+    font-family: minecraftregular;
+    font-size: 30px;
+    color: #fafd11;
+    text-shadow: 1px 2px #463903;
+    position: absolute;
+    left: 1150px;
+    top: 150px;
+    animation: text 2s infinite;
+}
+
+@font-face {
+    font-family: 'minecraftregular';
+    src: url('https://fonts.cdnfonts.com/s/25041/1_MinecraftRegular1.woff') format('woff');
+}
+
+@keyframes text {
+  0% {
+    transform:scale(1) rotate(-30deg);
+  }
+  50% {
+    transform:scale(0.9) rotate(-30deg);
+  }
+  100% {
+    transform:scale(1) rotate(-30deg);
+  }
+}
